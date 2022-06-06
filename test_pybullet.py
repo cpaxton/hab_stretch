@@ -21,4 +21,5 @@ for i in range (10000):
     time.sleep(1./240.)
     pos, orn = pb.getBasePositionAndOrientation(robot_id)
     print(pos, orn)
+input("press enter to terminate")
 pb.disconnect()

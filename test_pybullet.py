@@ -20,6 +20,7 @@ for i in range (10000):
     pb.stepSimulation()
     time.sleep(1./240.)
     pos, orn = pb.getBasePositionAndOrientation(robot_id)
-    print(pos, orn)
+    # Debug pose information as the robot falls over
+    # print(pos, orn)
 input("press enter to terminate")
 pb.disconnect()

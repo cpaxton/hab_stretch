@@ -1,5 +1,6 @@
 import trimesh
 import sys
+import numpy as np
 
 import argparse
 
@@ -18,7 +19,7 @@ print("pos =", (x, y, z))
 # Trimesh does things in the "wrong" order
 #w, x, y, z = trimesh.transformations.quaternion_from_matrix(to_origin)
 #orn = [x, y, z, w]
-orn = trimesh.transformations.euler_from_matrix(to_origin)
+orn = trimesh.transformations.euler_from_matrix(np.linalg.inv(to_origin))
 print("orn =", orn)
 print("extents =", extents)
 

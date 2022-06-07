@@ -4,6 +4,8 @@
 
 *stretch_description* provides materials for a [URDF](http://wiki.ros.org/urdf) kinematic model of the Stretch RE1 mobile manipulator from Hello Robot Inc.
 
+This repo is based on [this fork of stretch ros](https://github.com/cpaxton/stretch_ros/tree/feature/dex-wrist).
+
 ## Details
 
 The *meshes directory* contains [STL mesh files](https://en.wikipedia.org/wiki/STL_(file_format)) representing the exterior geometry of various parts of the robot. 

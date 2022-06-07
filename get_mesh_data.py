@@ -14,12 +14,13 @@ mesh = trimesh.load(filename)
 print("Loaded mesh from", filename, "=", mesh)
 
 to_origin, extents = trimesh.bounds.oriented_bounds(mesh)
+to_origin = np.linalg.inv(to_origin)
 x, y, z = to_origin[:3, 3]
 print("pos =", (x, y, z))
 # Trimesh does things in the "wrong" order
 #w, x, y, z = trimesh.transformations.quaternion_from_matrix(to_origin)
 #orn = [x, y, z, w]
-orn = trimesh.transformations.euler_from_matrix(np.linalg.inv(to_origin))
+orn = trimesh.transformations.euler_from_matrix(to_origin)
 print("orn =", orn)
 print("extents =", extents)
 

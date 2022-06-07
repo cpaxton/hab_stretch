@@ -257,7 +257,7 @@
       </geometry>
     </collision-->
     <collision>
-      <origin rpy="-1.570796 1.570796 0.0" xyz="0.088399 -0.117155 0.000066"/>
+      <origin rpy="-1.570796 1.570796 0.0" xyz="-0.117155 0.000075 0.088399"/>
       <geometry>
         <box size="0.143197 0.324688 0.341202"/>
       </geometry>
@@ -374,10 +374,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_mast.STL"/>
+      </geometry>
+    </collision-->
+   <collision>
+      <origin rpy="1.570796 1.570796 -0.000000" xyz="-0.000000 0.707500 0."/>
+      <geometry>
+        <box size="0.038125 0.038125 1.285000"/>
       </geometry>
     </collision>
   </link>

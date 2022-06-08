@@ -19,10 +19,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_wrist_yaw_bottom.STL"/>
+      </geometry>
+    </collision-->
+   <collision>
+      <origin rpy="1.570796 1.570796 0.000000" xyz="-0.013291 -0.021400 -0.020750"/>
+      <geometry>
+        <box size="0.041500 0.062919 0.094300"/>
       </geometry>
     </collision>
   </link>
@@ -47,10 +53,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_wrist_pitch.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="1.570796 1.570796 0.000000" xyz="-0.006179 -0.012056 0.020731"/>
+      <geometry>
+        <box size="0.043138 0.053359 0.064888"/>
       </geometry>
     </collision>
   </link>
@@ -76,10 +88,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_wrist_roll.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-1.157430 1.570796 0.000000" xyz="-0.000000 -0.000000 0.007750"/>
+      <geometry>
+        <box size="0.015500 0.028888 0.028987"/>
       </geometry>
     </collision>
   </link>
@@ -105,10 +123,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_straight_gripper.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="0.010085 0.000000 3.141593" xyz="-0.000000 -0.013998 0.054277"/>
+      <geometry>
+        <box size="0.052858 0.056076 0.108538"/>
       </geometry>
     </collision>
   </link>

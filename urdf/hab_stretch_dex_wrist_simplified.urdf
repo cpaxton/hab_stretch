@@ -157,10 +157,16 @@
         <color rgba="0.79216 0.81961 0.93333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_gripper_finger_right.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-0.063447 1.570796 0.000000" xyz="-0.097587 -0.014600 0.000000"/>
+      <geometry>
+        <box size="0.013000 0.030210 0.196835"/>
       </geometry>
     </collision>
   </link>
@@ -214,10 +220,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="1.5707963267948966 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_gripper_finger_left.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="3.078145 1.570796 0.000000" xyz="0.097587 0.014600 0.000000"/>
+      <geometry>
+        <box size="0.013000 0.030210 0.196835"/>
       </geometry>
     </collision>
   </link>
@@ -434,10 +446,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_lift.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-2.192103 1.570796 0.000000" xyz="-0.030334 0.039510 0.026256"/>
+      <geometry>
+        <box size="0.120261 0.137963 0.258855"/>
       </geometry>
     </collision>
   </link>
@@ -466,10 +484,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_arm_l4.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-3.141593 0.000000 -1.570796" xyz="-0.000000 0.000000 -0.111250"/>
+      <geometry>
+        <box size="0.059250 0.059250 0.222500"/>
       </geometry>
     </collision>
   </link>
@@ -494,10 +518,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_arm_l3.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="0.000000 -0.000000 -1.570796" xyz="0.000000 -0.000000 -0.113250"/>
+      <geometry>
+        <box size="0.055250 0.055250 0.226500"/>
       </geometry>
     </collision>
   </link>
@@ -524,10 +554,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_arm_l2.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-3.141593 0.000000 -1.570796" xyz="-0.000000 -0.000000 -0.113250"/>
+      <geometry>
+        <box size="0.051250 0.051250 0.226500"/>
       </geometry>
     </collision>
   </link>
@@ -554,10 +590,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_arm_l1.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-3.141593 0.000000 -1.570796" xyz="0.000000 -0.000000 -0.113250"/>
+      <geometry>
+        <box size="0.047250 0.047250 0.226500"/>
       </geometry>
     </collision>
   </link>
@@ -584,10 +626,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_arm_l0.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-3.141593 0.000000 -1.570796" xyz="0.041161 -0.000358 -0.086500"/>
+      <geometry>
+        <box size="0.059285 0.127573 0.226500"/>
       </geometry>
     </collision>
   </link>
@@ -614,10 +662,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_wrist_yaw.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="-3.141593 0.000000 0.432976" xyz="-0.000022 -0.000010 -0.019000"/>
+      <geometry>
+        <box size="0.029951 0.029976 0.038000"/>
       </geometry>
     </collision>
   </link>
@@ -649,10 +703,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_head.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="0.158839 1.570692 0.181780" xyz="0.061219 0.028457 0.028216"/>
+      <geometry>
+        <box size="0.056453 0.131612 0.195150"/>
       </geometry>
     </collision>
   </link>
@@ -677,10 +737,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_head_pan.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="0.534070 0.004098 -0.000000" xyz="0.000813 0.017168 -0.011469"/>
+      <geometry>
+        <box size="0.043969 0.048193 0.122235"/>
       </geometry>
     </collision>
   </link>
@@ -707,10 +773,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_head_tilt.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="1.562383 1.569947 -0.008414" xyz="0.010814 -0.023473 0.030498"/>
+      <geometry>
+        <box size="0.061014 0.068029 0.120844"/>
       </geometry>
     </collision>
   </link>
@@ -737,12 +809,12 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_aruco_right_base.STL"/>
       </geometry>
-    </collision>
+    </collision-->
   </link>
   <joint name="joint_aruco_right_base" type="fixed">
     <origin rpy="0 0 -1.5707963267949" xyz="-0.00500000000000014 -0.1304972 0.1597482"/>
@@ -765,12 +837,12 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_aruco_left_base.STL"/>
       </geometry>
-    </collision>
+    </collision-->
   </link>
   <joint name="joint_aruco_left_base" type="fixed">
     <origin rpy="0 0 -1.5707963267949" xyz="-0.00500000000000014 0.1304972 0.1597482"/>
@@ -793,12 +865,12 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_aruco_shoulder.STL"/>
       </geometry>
-    </collision>
+    </collision-->
   </link>
   <joint name="joint_aruco_shoulder" type="fixed">
     <origin rpy="-1.53998860117704E-29 3.55962409571165E-15 0.0" xyz="-0.0133768876375287 0.0558540528812078 0.0861368272417975"/>
@@ -849,12 +921,12 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_aruco_inner_wrist.STL"/>
       </geometry>
-    </collision>
+    </collision-->
   </link>
   <joint name="joint_aruco_inner_wrist" type="fixed">
     <origin rpy="3.14159265358979 4.23377442363088E-14 3.14159265358979" xyz="0.0472499999999947 -0.0119000000000034 -0.0272499999991938"/>
@@ -1020,10 +1092,16 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material>
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_respeaker.STL"/>
+      </geometry>
+    </collision-->
+    <collision>
+      <origin rpy="0.290120 1.487727 1.744709" xyz="-0.000138 0.006371 -0.017378"/>
+      <geometry>
+        <box size="0.042669 0.070906 0.079812"/>
       </geometry>
     </collision>
   </link>

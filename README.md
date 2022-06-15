@@ -1,6 +1,17 @@
-![](../images/banner.png)
 
-## Overview
+## Stretch Model for Habitat
+
+Want a lot of robots?
+
+![](./imgs/pile_of_stretches.png)
+
+Above: graphic showing the Stretch placed many times in habitat2.
+
+![](./imgs/simplified.png)
+
+This repo was modified to make it easier to use for large scale data collection in Habitat2.
+
+## Old Overview
 
 *stretch_description* provides materials for a [URDF](http://wiki.ros.org/urdf) kinematic model of the Stretch RE1 mobile manipulator from Hello Robot Inc.
 

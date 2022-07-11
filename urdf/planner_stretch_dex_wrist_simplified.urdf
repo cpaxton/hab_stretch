@@ -273,6 +273,7 @@
   <!--<xacro:include filename="stretch_dry_erase_marker.xacro" />-->
   <joint name="base_y_joint" type="prismatic">
     <parent link="base_xy_link"/>
+    <origin rpy="0 0 1.57079632679496"/>
     <child link="base_link"/>
     <limit effort="100" lower="-50.0" upper="50" velocity="3.0"/>
   </joint>
@@ -284,6 +285,7 @@
   </joint>
   <joint name="base_x_joint" type="prismatic">
     <parent link="base_theta_link"/>
+    <origin rpy="0 0 -1.57079632679496"/>
     <child link="base_xy_link"/>
     <limit effort="100" lower="-50.0" upper="50" velocity="3.0"/>
   </joint>

@@ -1,6 +1,7 @@
 import pybullet as pb
 import pybullet_data
 import time
+import numpy as np
 
 client = pb.connect(pb.GUI)
 # pb.setAdditionalSearchPath('.')
@@ -14,13 +15,20 @@ start_orn = pb.getQuaternionFromEuler([0, 0, -1.5607])
 
 # Load the stretch
 #robot_id = pb.loadURDF('./urdf/stretch.urdf', start_pos, start_orn)
-robot_id = pb.loadURDF('./urdf/planner_hab_stretch_dex_wrist_simplified.urdf', start_pos, start_orn)
+robot_id = pb.loadURDF('./urdf/planner_stretch_dex_wrist_simplified.urdf', start_pos, start_orn)
 
-for i in range (10000):
-    pb.stepSimulation()
-    time.sleep(1./240.)
-    pos, orn = pb.getBasePositionAndOrientation(robot_id)
-    # Debug pose information as the robot falls over
-    # print(pos, orn)
+pos, orn = pb.getBasePositionAndOrientation(robot_id)
+
+
+for i in range(-100, 100):
+    for j in range(-100, 100, 10):
+        # innermost loop is increasing y 
+        for k in range(-100, 100, 10):
+            # set first few joints of the robot
+            pb.resetJointState(robot_id, 0, i * np.pi / 100)
+            pb.resetJointState(robot_id, 1, j / 100.0)
+            pb.resetJointState(robot_id, 2, k / 100.0)
+            time.sleep(0.025)
+
 input("press enter to terminate")
 pb.disconnect()

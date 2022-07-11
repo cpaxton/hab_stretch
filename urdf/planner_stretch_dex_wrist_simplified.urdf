@@ -280,10 +280,10 @@
   </joint>
   <joint name="base_theta_joint" type="revolute">
     <parent link="base_theta_link"/>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 -1.57079632679496" xyz="0 0 0"/>
     <child link="base_link"/>
     <limit effort="100" lower="-3.14159" upper="3.14159" velocity="1.0"/>
-    <axis xyz="0 0 -1"/>
+    <axis xyz="0 0 1"/>
   </joint>
   <joint name="base_x_joint" type="prismatic">
     <parent link="world"/>

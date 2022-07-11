@@ -19,16 +19,18 @@ robot_id = pb.loadURDF('./urdf/planner_stretch_dex_wrist_simplified.urdf', start
 
 pos, orn = pb.getBasePositionAndOrientation(robot_id)
 
+print(pb.getJointInfo(robot_id, 0))
 
-for i in range(-100, 100):
-    for j in range(-100, 100, 10):
-        # innermost loop is increasing y 
-        for k in range(-100, 100, 10):
-            # set first few joints of the robot
-            pb.resetJointState(robot_id, 0, i * np.pi / 100)
-            pb.resetJointState(robot_id, 1, j / 100.0)
-            pb.resetJointState(robot_id, 2, k / 100.0)
-            time.sleep(0.025)
+for _ in range(100):
+    for i in range(-100, 100):
+        for j in range(-100, 100, 10):
+            # innermost loop is increasing y 
+            for k in range(-100, 100, 10):
+                # set first few joints of the robot
+                pb.resetJointState(robot_id, 0, i * np.pi / 100)
+                pb.resetJointState(robot_id, 1, j / 100.0)
+                pb.resetJointState(robot_id, 2, k / 100.0)
+                time.sleep(0.025)
 
 input("press enter to terminate")
 pb.disconnect()

@@ -28,8 +28,8 @@ for _ in range(100):
             for k in range(-100, 100, 10):
                 # set first few joints of the robot
                 pb.resetJointState(robot_id, 0, i * np.pi / 100)
-                pb.resetJointState(robot_id, 1, j / 100.0)
-                pb.resetJointState(robot_id, 2, k / 100.0)
+                #pb.resetJointState(robot_id, 1, j / 100.0)
+                #pb.resetJointState(robot_id, 2, k / 100.0)
                 time.sleep(0.025)
 
 input("press enter to terminate")

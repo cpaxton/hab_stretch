@@ -21,18 +21,18 @@ pos, orn = pb.getBasePositionAndOrientation(robot_id)
 
 print(pb.getJointInfo(robot_id, 0))
 
-for _ in range(100):
+for _ in range(1):
     for i in range(-100, 100):
         # Try 
-        pb.resetJointState(robot_id, 0, i * np.pi / 100)
         for j in range(-100, 100, 10):
             # innermost loop is increasing y 
-            for k in range(-100, 100, 10):
+            for k in range(-100, 100, 25):
                 # set first few joints of the robot
-                pb.resetJointState(robot_id, 0, i * np.pi / 100)
-                pb.resetJointState(robot_id, 1, j / 100.0)
-                pb.resetJointState(robot_id, 2, k / 100.0)
-                time.sleep(0.001)
+                pb.resetBasePositionAndOrientation(robot_id, [0, 0, 0.1], [0, 0, 0, 1])
+                pb.resetJointState(robot_id, 2, i * np.pi / 100)
+                pb.resetJointState(robot_id, 0, j / 100.0)
+                pb.resetJointState(robot_id, 1, k / 100.0)
+                time.sleep(0.01)
 
 input("press enter to terminate")
 pb.disconnect()

@@ -4,7 +4,7 @@
     catkin_create_pkg stretch_description message_generation message_runtime rospy
 -->
 <package format="2">
-  <name>stretch_description</name>
+  <name>home_robot_description</name>
   <version>0.2.0</version>
   <description>The stretch_description package</description>
   

@@ -317,11 +317,17 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material> -->
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_right_wheel.STL"/>
       </geometry>
+    </collision-->
+    <collision>
+	    <origin rpy="0 0 0" xyz="0 0 0"/>
+	    <geometry>
+		    <cylinder radius="0.05" length="0.04"/>
+	    </geometry>
     </collision>
   </link>
   <joint name="joint_right_wheel" type="continuous">
@@ -346,11 +352,17 @@
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/>
       </material> -->
     </visual>
-    <collision>
+    <!--collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
         <mesh filename="../meshes/link_left_wheel.STL"/>
       </geometry>
+    </collision-->
+    <collision>
+	    <origin rpy="0 0 0" xyz="0 0 0.025"/>
+	    <geometry>
+		    <cylinder radius="0.05" length="0.04"/>
+	    </geometry>
     </collision>
   </link>
   <joint name="joint_left_wheel" type="continuous">

@@ -14,7 +14,8 @@ start_orn = pb.getQuaternionFromEuler([0, 0, -1.5607])
 
 # Load the stretch
 #robot_id = pb.loadURDF('./urdf/stretch.urdf', start_pos, start_orn)
-robot_id = pb.loadURDF('./urdf/hab_stretch_dex_wrist_simplified.urdf', start_pos, start_orn)
+#robot_id = pb.loadURDF('./urdf/hab_stretch_dex_wrist_simplified.urdf', start_pos, start_orn)
+robot_id = pb.loadURDF('./habitat_stretch/urdf/hab_stretch.urdf', start_pos, start_orn)
 
 for i in range (10000):
     pb.stepSimulation()

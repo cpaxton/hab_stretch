@@ -15,7 +15,8 @@ start_orn = pb.getQuaternionFromEuler([0, 0, -1.5607])
 
 # Load the stretch
 #robot_id = pb.loadURDF('./urdf/stretch.urdf', start_pos, start_orn)
-robot_id = pb.loadURDF('./urdf/planner_stretch_dex_wrist_simplified.urdf', start_pos, start_orn)
+#robot_id = pb.loadURDF('./urdf/planner_stretch_dex_wrist_simplified.urdf', start_pos, start_orn)
+robot_id = pb.loadURDF('./urdf/planner_calibrated_manipulation_mode.urdf', start_pos, start_orn)
 
 pos, orn = pb.getBasePositionAndOrientation(robot_id)
 

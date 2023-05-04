@@ -818,7 +818,7 @@
     <visual>
       <origin xyz="0.0043 -0.0175 0.0" rpy="1.5707963267948966 0.0 1.5707963267948966"/>
       <geometry>
-        <mesh filename="package://realsense2_description/meshes/d435.dae"/>
+        <mesh filename="meshes/realsense2/d435.dae"/>
       </geometry>
     </visual>
     <collision>
